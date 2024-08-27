@@ -1,0 +1,214 @@
+
+:root{
+    --color-primario: #FBF3D5;
+    --color-secundario: #E68369;
+    --color-terceario: #D6DAC8;
+    --color-prueba: #EFBC9B;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+.header{
+    background-color: var(--color-terceario);
+}
+
+.logo{
+    padding: 2% 0% 0% 2%;
+    width: 12%;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-terceario);
+}
+
+.text__area{
+    border: none;
+    color: var(--color-primario);
+    text-transform: lowercase;
+    resize: none;
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    background: var(--color-terceario);
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+    font-style: none;
+
+}
+
+::placeholder{ color: var(--color-primario); }
+    .text__area:focus{
+        outline: none;
+    }
+
+
+.text__area:active{
+    border: none;
+}
+
+.Informacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+    font-family: "Inter";
+    font-style: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgb(20, 18, 18);
+    opacity: 0.9;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 84%;
+}
+
+.btn__encriptar{
+    background-color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 25%;
+    gap: 8%;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terceario);
+    cursor: pointer;
+}
+
+.btn__encriptar:hover{
+    margin: 0.3%;
+    width: 24.6%;
+    padding: 1.8%;
+    background-color: var(--color-prueba);
+
+}
+
+.btn__desencriptar{
+    background-color: var(--color-terceario);
+    border: 1px solid var(--color-primario);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.btn__desencriptar:hover{
+    margin: 0.3%;
+    width: 24.6%;
+    padding: 1.8%;
+    background-color: #ccd4af;
+
+}
+
+
+
+.mensaje{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: var(--color-primario);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    font-size: 30px;
+    resize: none;
+    border: none;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+
+
+@media (max-width: 57.5em) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .mensaje{
+        width: 100%;
+    }
+    .text__area{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .Informacion{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn__encriptar, .btn__desencriptar{
+        width: 48%;
+        border-radius: 16px;
+
+    }
+    .btn__encriptar:hover,.btn__desencriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .mensaje{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+}
